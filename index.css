@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/photos-gratuite/3d-rendent-coucher-soleil-paysage-silhouette-arbre-erable_1048-4446.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9; /* Ajustez l'opacité pour rendre l'image plus claire */
+    z-index: -1; /* Assurez-vous que l'image de fond reste en arrière-plan */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche semi-transparente */
+    z-index: -1; /* Assurez-vous que la superposition reste en arrière-plan */
+}
+
+div{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+   
+}
+
+div li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+div a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    text-decoration: underline;
+}
+
+div a:hover {
+    background-color: #000000; 
+    color:orange; 
+    border-radius: 5px;
+}
+
+h1{
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 20%;
+    text-decoration:underline ;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+}
+footer div {position: fixed;
+     bottom: 0; 
+     left: 0; 
+     font-size: 1em; 
+    }
