@@ -1,7 +1,72 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow: hidden;
 }
-.bloc{
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000; /* Assurez-vous que le nav est au-dessus des autres éléments */
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: rgb(81, 81, 85);
+    text-decoration: underline;
+    background-color: rgb(21, 2, 85);
+    border-radius: 5px;
+}
+
+.bloc {
+    position: relative;
     height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bloc video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100 ;
+    transform:translate(-50%, -50%) ;
+}
+
+.bloc::before{
+    position: absolute;
+    content:"" ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+}
+
+ h1 {
+    
+    color: white;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
 }

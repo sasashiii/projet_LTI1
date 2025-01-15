@@ -22,7 +22,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://img.freepik.com/photos-gratuite/3d-rendent-coucher-soleil-paysage-silhouette-arbre-erable_1048-4446.jpg?semt=ais_hybrid');
+    background-image: url('https://media.istockphoto.com/id/2156015859/fr/vectoriel/travel-banner.jpg?s=612x612&w=0&k=20&c=BfcA7QQbJHUC1W-UAlBqf4JRzMW3q8rLKLNbP1NgGUk=');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,9 +73,9 @@ div a:hover {
 
 h1{
     color: black;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 15%;
     text-decoration:underline ;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
