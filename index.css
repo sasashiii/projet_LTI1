@@ -58,7 +58,7 @@ div li {
 
 div a {
     text-decoration: none;
-    color: white; 
+    color: rgb(223, 102, 102); 
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
