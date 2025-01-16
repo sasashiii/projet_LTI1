@@ -1,12 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
-header {
+
+.bloc {
     background-image: url('https://s1.1zoom.me/b5249/909/Fortress_Castles_Spain_Alhambra_Granada_556406_3840x2160.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;  
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -14,10 +20,52 @@ header {
     color: white;
     text-align: center;
 }
-h1{
+
+header.bloc {
+    position: relative;
+    height: 70vh; /* Augmentez la hauteur de l'entête */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header.bloc video {
+    position: absolute;
+    width: 100%; /* Utilisez la largeur complète */
+    height: auto; /* Ajustez la hauteur automatiquement */
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+header.bloc::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+}
+
+header.bloc h1 {
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
+}
+
+h1 {
     text-decoration: underline;
     font-size: 70px;
 }
+
 nav {
     position: fixed;
     top: 0;
@@ -27,20 +75,103 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    z-index: 1000; /* Assurez-vous que le nav est au-dessus des autres éléments */
 }
+
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
 }
-nav a:hover{
+
+nav a:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
-    background-color: rgb(93, 126, 237);
+    background-color: rgb(167, 25, 25);
     border-radius: 5px;
 }
+
 .content {
-    padding: 20px;
+    padding: 10px 20px; /* Réduisez le padding pour réduire la distance */
     height: 2000px; /* Just to enable scrolling */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0; /* Réduisez le padding pour réduire la distance */
+}
+
+.gallery-item {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.social-media {
+    
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 10px; /* Espace entre les éléments */
+    padding: 10px;
+    background-color: transparent; /* Supprimez le fond de couleur */
+}
+
+.social-media a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: rgb(239, 184, 184);
+    text-decoration: underline;
+    background-color: rgb(81, 78, 78);
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 

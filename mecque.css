@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 nav {
@@ -24,10 +23,56 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(81, 81, 85);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
-    background-color: rgb(21, 2, 85);
+    background-color: rgb(207, 143, 143);
     border-radius: 5px;
+}
+
+header.bloc {
+    position: relative;
+    height: 90vh; /* Augmentez la hauteur de l'entête */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header.bloc video {
+    position: absolute;
+    width: 100%; /* Utilisez la largeur complète */
+    height: auto; /* Ajustez la hauteur automatiquement */
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+header.bloc::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0);
+    z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+}
+
+header.bloc h1 {
+    margin-top: 20px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
+}
+
+section.content {
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .bloc {
@@ -66,6 +111,71 @@ div h1 {
     text-decoration: underline;
     text-align: center;
     font-size: 3em;
+    height: 90vh;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.social-media {
+   
+    bottom: 0;
+    right: 0;
+    gap: 10px; /* Espace entre les éléments */
+    padding: 10px;
+    background-color: transparent; /* Supprimez le fond de couleur */
+}
+
+.social-media a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-media a:hover {
+    color: rgb(239, 184, 184);
+    text-decoration: underline;
+    background-color: rgb(81, 78, 78);
+    border-radius: 5px;
+}
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }

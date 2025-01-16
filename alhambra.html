@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="alhambra.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alhambra</title>
-    
+    <link rel="stylesheet" href="alhambra.css">
 </head>
 <body>
     <nav>
-        <a href="#accueil">Accueil</a>
+        <a href="index.html">Accueil</a>
+        <a href="alhambra.html">Alhambra</a>
         <a href="gyeongbokgung.html">Gyeongbokgung</a>
-        <a href="sydney.html">Seydney</a>
         <a href="colisee.html">Colisée</a>
         <a href="mecque.html">Mecque</a>
         <a href="muraille.html">Muraille</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <header>
+    <header class="bloc">
+        
         <h1>Bienvenue à Alhambra</h1>
     </header>
-    <div class="content">
-        <p>Contenu de la page...</p>
+    <section class="content">
+        <article>
+            <h2>Introduction</h2>
+            <p>L'Alhambra est un palais et une forteresse situés à Grenade, en Espagne. Il est célèbre pour son architecture mauresque et ses magnifiques jardins.</p>
+        </article>
+        <div class="gallery">
+            <div class="gallery-item">
+                <h2>Histoire de l'Alhambra</h2>
+                <img src="https://media.istockphoto.com/id/2163796455/fr/vectoriel/forteresse-du-palais-de-lalhambra.jpg?s=612x612&w=0&k=20&c=V7P6wZfiwZ_c28tZ9uzZQGNTYKjy1MYbh6QB4IMl6I8=" alt="Histoire de l'Alhambra" class="responsive">
+                <p>La construction de l'Alhambra a commencé au XIIIe siècle sous la dynastie nasride. Elle a été agrandie et embellie par les sultans successifs.</p>
+            </div>
+            <div class="gallery-item">
+                <h2>Architecture de l'Alhambra</h2>
+                <img src="https://media.istockphoto.com/id/182727232/fr/photo/lalhambra.jpg?s=612x612&w=0&k=20&c=b1tVZqAl_bzG7r6TbMauGIZUehuADcsobW01ow7oxPo=" alt="Architecture de l'Alhambra">
+                <p>L'Alhambra est un exemple exceptionnel de l'architecture islamique, avec ses arcs en fer à cheval, ses mosaïques colorées et ses cours intérieures paisibles.</p>
+            </div>
+            <div class="gallery-item">
+                <h2>Jardins de l'Alhambra</h2>
+                <img src="https://media.istockphoto.com/id/469901664/fr/photo/le-du-g%C3%A9n%C3%A9ralife-de-lalhambra-de-grenade.jpg?s=612x612&w=0&k=20&c=bm-VHqt1Z9N3rgrV1ygW5DaBmRgSj3JlbTHWa1vJjZo=" alt="Jardins de l'Alhambra">
+                <p>Les jardins de l'Alhambra, tels que le Generalife, sont célèbres pour leur beauté et leur tranquillité, avec des fontaines, des bassins et une végétation luxuriante.</p>
+            </div>
+        </div>
+    </section>
+    <div class="social-media">
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://instagram.com">Instagram</a>
     </div>
+    <section class="video-section"></section>
+        <h2>Vidéo racontant l'histoire de l'Alhambra EN ANGLAIS</h2>
+        
+        <iframe controls width="560" height="315" src="https://www.youtube.com/embed/sQYRsBAf1MA?si=xa1QBpluksKMpC29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+   
+    <script src="monument.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ body, html {
     height: 100%;
 }
 header {
-    background-image: url('https://media.istockphoto.com/id/2151863095/fr/photo/the-great-wall-of-china.jpg?s=612x612&w=0&k=20&c=AQb7R2CPdCtRAv1NNi5LYO1nE0Q8LMMZkFHnnoixJr4=');
+    background-image: url('https://img2.wallspic.com/crops/1/0/8/4/0/104801/104801-ruines-site_archeologique-tourisme-station_de_montagne-la_grande_muraille_de_chine-1920x1080.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(167, 25, 25);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 h1{

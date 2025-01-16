@@ -60,13 +60,17 @@ nav a:hover {
     z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
 }
 
- h1 {
-    
+ h1{
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     text-decoration: underline;
     text-align: center;
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
-    z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
-}
+    display: flex;
+    height: 80vh;
+
+ }
+    
+   
+    
