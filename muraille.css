@@ -34,14 +34,59 @@ nav a {
     text-decoration: none;
     font-size: 20px;
 }
+
 nav a:hover{
     color: rgb(0, 0, 0);
     text-decoration: underline;
-    background-color: rgb(167, 25, 25);
+    background-color: rgb(207, 143, 143);
     border-radius: 5px;
 }
 .content {
     padding: 20px;
-    height: 2000px; /* Just to enable scrolling */
+    height: 600px; /* Just to enable scrolling */
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery-item {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+
+h2{ 
+    font-size: 2em;
+    text-decoration: underline;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
 }
 

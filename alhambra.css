@@ -88,7 +88,7 @@ nav a {
 nav a:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
-    background-color: rgb(167, 25, 25);
+    background-color: rgb(207, 143, 143);
     border-radius: 5px;
 }
 
