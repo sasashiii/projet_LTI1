@@ -22,7 +22,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://media.istockphoto.com/id/2156015859/fr/vectoriel/travel-banner.jpg?s=612x612&w=0&k=20&c=BfcA7QQbJHUC1W-UAlBqf4JRzMW3q8rLKLNbP1NgGUk=');
+    background-image: url('https://media.istockphoto.com/id/1027397370/fr/photo/avion-mod%C3%A8le-closeup-d%C3%A9focalis%C3%A9-personne-r%C3%A9servation-billets-davion-en-ligne-sur-ordinateur.jpg?s=612x612&w=0&k=20&c=TI3GjMnqCV3tunUcn0RPApKolqymTh-jLulhP1bXHis=');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,7 +58,7 @@ div li {
 
 div a {
     text-decoration: none;
-    color: rgb(223, 102, 102); 
+    color: rgb(0, 0, 0); 
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
@@ -72,11 +72,18 @@ div a:hover {
 }
 
 h1{
+    font-family: "Agu Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 0;
+
     color: black;
     font-size: 3.5em;
     text-align: center;
-    margin-top: 15%;
-    text-decoration:underline ;
+    margin-top: 9%;
+    
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
 }
