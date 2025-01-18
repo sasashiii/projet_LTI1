@@ -26,8 +26,8 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.9; /* Ajustez l'opacité pour rendre l'image plus claire */
-    z-index: -1; /* Assurez-vous que l'image de fond reste en arrière-plan */
+    opacity: 0.9;
+    z-index: -1; 
 }
 
 body::after {
@@ -37,9 +37,8 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Couleur blanche semi-transparente */
-    z-index: -1; /* Assurez-vous que la superposition reste en arrière-plan */
-}
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1; }
 
 div{
     list-style: none;
@@ -82,7 +81,7 @@ h1{
     color: black;
     font-size: 3.5em;
     text-align: center;
-    margin-top: 9%;
+    margin-top: 12%;
     
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;

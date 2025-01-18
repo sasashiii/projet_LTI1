@@ -24,7 +24,7 @@ body, html {
 
 header.bloc {
     position: relative;
-    height: 70vh; /* Augmentez la hauteur de l'entête */
+    height: 70vh; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,8 +34,8 @@ header.bloc {
 
 header.bloc video {
     position: absolute;
-    width: 100%; /* Utilisez la largeur complète */
-    height: auto; /* Ajustez la hauteur automatiquement */
+    width: 100%; 
+    height: auto; 
     top: 50%;
     left: 50%;
     z-index: -100;
@@ -49,7 +49,7 @@ header.bloc::before {
     width: 100%;
     opacity: 0.5;
     background-color: rgb(0, 0, 0);
-    z-index: -1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+    z-index: -1; 
 }
 
 header.bloc h1 {
@@ -58,11 +58,14 @@ header.bloc h1 {
     text-decoration: underline;
     text-align: center;
     font-size: 3em;
-    font-family: 'Courier New', Courier, monospace;
-    z-index: 1; /* Assurez-vous que le h1 est au-dessus du pseudo-élément */
-}
+   
+    z-index: 1;}
 
 h1 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+  
     text-decoration: underline;
     font-size: 70px;
 }
@@ -76,7 +79,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    z-index: 1000; /* Assurez-vous que le nav est au-dessus des autres éléments */
+    z-index: 1000; 
 }
 
 nav a {
@@ -95,8 +98,8 @@ nav a:hover {
 .content p {text-align: center;
 font-size: 20px;}
 .content {
-    padding: 10px 20px; /* Réduisez le padding pour réduire la distance */
-    height: 920px; /* Just to enable scrolling */
+    padding: 10px 20px; 
+    height: 920px; 
     background-color:  #f0f0f0;
     font-family: Arial, sans-serif;
 }
@@ -107,13 +110,13 @@ font-size: 20px;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px 0; /* Réduisez le padding pour réduire la distance */
+    padding: 10px 0;
 }
 
 .gallery-item {
     margin: 10px;
     text-align: center;
-    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    flex-basis: calc(33.333% - 20px); 
     box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -144,9 +147,9 @@ font-size: 20px;}
     bottom: 0;
     right: 0;
     display: flex;
-    gap: 10px; /* Espace entre les éléments */
+    gap: 10px; 
     padding: 10px;
-    background-color: transparent; /* Supprimez le fond de couleur */
+    background-color: transparent; 
 }
 
 .social-media a {

@@ -23,6 +23,10 @@ header {
     text-align: center;
 }
 h1{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+  
     text-align: center;
    height: 85%;
     font-size: 70px;
@@ -36,7 +40,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    z-index: 1000; /* Assurez-vous que le nav est au-dessus des autres éléments */
+    z-index: 1000; 
 }
 nav a {
     color: rgb(255, 255, 255);
@@ -51,7 +55,7 @@ nav a:hover{
 }
 .content {
     padding: 20px;
-    height: 600px; /* Just to enable scrolling */
+    height: 600px; 
     background-color:  #f0f0f0;
     font-family: Arial, sans-serif;
 }
@@ -67,7 +71,7 @@ nav a:hover{
 .gallery-item {
     margin: 10px;
     text-align: center;
-    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    flex-basis: calc(33.333% - 20px); 
     box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -98,9 +102,9 @@ nav a:hover{
     bottom: 0;
     right: 0;
     display: flex;
-    gap: 10px; /* Espace entre les éléments */
+    gap: 10px; 
     padding: 10px;
-    background-color: transparent; /* Supprimez le fond de couleur */
+    background-color: transparent; 
 }
 
 .social-media a {

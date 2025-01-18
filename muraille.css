@@ -15,7 +15,10 @@ header {
     color: rgb(255, 255, 255);
     text-align: center;
 }
-h1{
+h1{ font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+  
     text-decoration: underline;
     font-size: 70px;
 }
@@ -43,7 +46,7 @@ nav a:hover{
 }
 .content {
     padding: 20px;
-    height: 600px; /* Just to enable scrolling */
+    height: 600px; 
 }
 .gallery {
     display: flex;
@@ -55,7 +58,7 @@ nav a:hover{
 .gallery-item {
     margin: 10px;
     text-align: center;
-    flex-basis: calc(33.333% - 20px); /* Trois éléments par ligne */
+    flex-basis: calc(33.333% - 20px); 
     box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ccc;
