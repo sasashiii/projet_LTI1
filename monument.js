@@ -1,27 +1,48 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let next = document.querySelector('.next');
-    let prev = document.querySelector('.prev');
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
 
-    if (!next || !prev) {
-        console.error('Les boutons next ou prev ne sont pas trouvés.');
-        return;
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function(){
+    showSlider('next');    
+}
+
+prevDom.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
+function showSlider(type){
+    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
+    if(type === 'next'){
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    }else{
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
     }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
 
-    next.addEventListener('click', function() {
-        let items = document.querySelectorAll('.item');
-        if (items.length > 0) {
-            document.querySelector('.slide').appendChild(items[0]);
-        } else {
-            console.error('Aucun élément avec la classe .item trouvé.');
-        }
-    });
-
-    prev.addEventListener('click', function() {
-        let items = document.querySelectorAll('.item');
-        if (items.length > 0) {
-            document.querySelector('.slide').prepend(items[items.length - 1]);
-        } else {
-            console.error('Aucun élément avec la classe .item trouvé.');
-        }
-    });
-});
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+}
